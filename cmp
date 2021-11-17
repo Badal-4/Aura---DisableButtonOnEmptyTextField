@@ -1,0 +1,9 @@
+<aura:component>
+
+  <aura:attribute name="username" type="String" default="" />
+
+
+  <ui:inputText required="true" value="{!v.username}" label="Username" updateOn="keyup" />
+  <ui:button disabled="{!empty(v.username)}" class="slds-button_brand" label="Submit" />
+
+</aura:component>
